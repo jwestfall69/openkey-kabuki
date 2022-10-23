@@ -3,11 +3,14 @@ This is an opensource/hardware implementation of an on the fly kabuki CPU key pr
 
 ![board pics](images/board.jpg)
 
+Installed:<br>
+![installed](images/installed.jpg)
+
 In general this project is providing the same functionality as [Undamned's InfiniKey-Kabuki](https://www.arcade-projects.com/threads/infinikey-kabuki.8338/).  The lack of supply is what prompted me to make openkey-kabuki.  If they ever end up coming back in stock please consider purchasing those to support [Undamned](https://www.arcade-projects.com/forums/temple-of-the-undamned.77/)'s work.
 
 Details on *how* to program an kabuki CPU's key data can be found in [Eduardo Cruz](http://arcadehacker.blogspot.com/)'s [write up](http://arcadehacker.blogspot.com/2014/11/capcom-kabuki-cpu-intro.html) and [youtube video](https://www.youtube.com/watch?v=9t-9hQEOjLI).
 
-Details on *what* to program can be found in MAME's decryption code for the [kabuki CPU](https://github.com/mamedev/mame/blob/master/src/mame/capcom/kabuki.cpp#L73.).
+Details on *what* to program can be found in MAME's decryption code for the [kabuki CPU](https://github.com/mamedev/mame/blob/master/src/mame/capcom/kabuki.cpp#L73).
 
 ## DIP Switch / Solder Jumpers
 ---
@@ -117,4 +120,27 @@ This is what a dead battery society mod will look like
 
 #### CPS 1.5 (QSound CPU)
 
-TODO
+This is what the dead battery society mod will look like on the QSound board of a cps 1.5 game.
+
+Top Side:<br>
+![qsound top dbs](images/qsound_top_dbs.jpg)
+* R33 (1 ohm resistor) is missing
+* C12 (100nf capactor) is replaced with a jumper
+* Modified QSound program rom
+
+Bottom Side:<br>
+![qsound bottom dbs](images/qsound_bottom_dbs.jpg)
+* Wire running from QSound program rom pin 30 to Kabuki CPU pin 27
+* Cut trace between QSound program rom pins 30 and 31
+
+There will be additional changes specific to slam masters / muscle bomber which are not covered above.
+
+Once reverted it should look like this
+
+Top Side:<br>
+![qsound top dbs reverted](images/qsound_top_dbs_reverted.jpg)
+
+Bottom Side:<br>
+![qsound bottom dbs reverted](images/qsound_bottom_dbs_reverted.jpg)
+
+Its hard to tell from the picture, but pins 30 and 31 on the QSound program rom are jumpered together.
