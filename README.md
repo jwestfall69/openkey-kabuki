@@ -124,8 +124,8 @@ This is what the dead battery society mod will look like on the QSound board of 
 
 Top Side:<br>
 ![qsound top dbs](images/qsound_top_dbs.jpg)
-* R33 (1 ohm resistor) is missing
-* C12 (100nf capactor) is replaced with a jumper
+* R33 (1 ohm resistor 0805 size) is missing
+* C12 (100nf capactor 0805 size) is replaced with a jumper
 * Modified QSound program rom
 
 Bottom Side:<br>
