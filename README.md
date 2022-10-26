@@ -1,4 +1,20 @@
 # openkey-kabuki
+* [Overview](#overview)
+* [Supported Games](#supported-games)
+  * [Mitchell](#mitchell)
+  * [CPS 1.5 (QSound CPU)](#cps-1-5-qsound-cpu)
+* [Hardware](#hardware)
+  * [PCB Manufacturing](#pcb-manufacturing)
+  * [BOM](#bom)
+  * [Assembly](#assembly)
+* [Programming](#programming)
+  * [Hardware](#hardware-1)
+  * [Software](#software)
+* [Arcade PCB Prep](#arcade-pcb-prep)
+  * [Mitchell](#mitchell-1)
+  * [CPS 1.5 (QSound CPU)](#cps-1-5-qsound-cpu-1)
+
+## Overview
 This is an opensource/hardware implementation of an on the fly kabuki CPU key programmer that consist of a PCB that sits between the CPU socket and the kabuki CPU.  The kabuki CPU is found in Mitchell and CPS 1.5 arcade boards and contains keys for decrypting/decoding the program roms.
 
 ![board pics](images/board.jpg)
@@ -12,11 +28,11 @@ Details on *how* to program a kabuki CPU's key data can be found in [Eduardo Cru
 
 Details on *what* to program can be found in MAME's decryption code for the [kabuki CPU](https://github.com/mamedev/mame/blob/master/src/mame/capcom/kabuki.cpp#L73).
 
-## DIP Switch / Solder Jumpers
+## Supported Games
 ---
 openkey-kabuki supports either having a 5 position switch or using solder jumpers for picking which game key to use.   Below is a list of support games and what switches/jumpers must be used for each.
 
-#### Mitchell Based Games
+#### Mitchell
 | Switch<br>12345 | Program ROM Labels | MAME Sets | Game Name(s) | Tested / Working |
 |-----------------|:------------------:|-----------|--------------|:-----------------:|
 | 00000 | BLE<br>BLJ | block<br>blockj | Block Block | YES (conversion)|
@@ -62,7 +78,7 @@ I've been using [jlcpcb](https://jlcpcb.com/) for PCB manufacturing.  The only r
 **NOTE**: Additional components maybe needed if you need to revert any previously made desuicide modifications to the arcade PCB.  Check the Arcade PCB Prep section at the bottom for details.
 
 #### Assembly
-You should solder the SMD components first.  Take special care to void getting any solder into any of the socket through holes.  
+You should solder the SMD components first.  Take special care to void getting any solder into any of the socket through holes.
 
   * If you install the dip switch block I would advise testing it
   * If you are using the solder jumpers instead, these can be done now or after everything is fully assembled.
@@ -76,7 +92,7 @@ When soldering the socket its best to not use a ton of solder.  The below pictur
 
 ![socket soldering2](images/socket_soldering2.jpg)
 
-Note that there is a small gap between the through holes and socket pins.  Solder will naturally want to wick up into that gap.  I generally just use enough solder so that the gap around the socket pin becomes filled.  
+Note the small gap between the through holes and socket pins.  Solder will naturally want to wick up into that gap.  I generally just use enough solder so that the gap around the socket pin becomes filled.
 
 Once you have completed soldering the socket you should check the skinny part of the pins to verify there aren't any solder blobs on them.  These could cause damage to the CPU socket.
 
@@ -108,7 +124,7 @@ From there you need to configure the board/programming settings.  I've been usin
 ---
 Its possible the arcade pcb may already have had some type of desuicide mod done to it.   The most common is going to be [The Dead Battery Society](http://www.arcadecollecting.com/dead/) mod, which consists of disabling the decryption on the kabuki CPU and replacing the program rom(s).
 
-#### Mitchell Boards (pang/bbros/etc)
+#### Mitchell
 This is what a dead battery society mod will look like
 ![mitchell dbs](images/mitchell_dbs_mod.jpg)
  * R33 (1k ohm resistor) is missing
