@@ -15,7 +15,7 @@
   * [CPS 1.5 (QSound CPU)](#cps-1-5-qsound-cpu-1)
 
 ## Overview
-This is an opensource/hardware implementation of an on the fly kabuki CPU key programmer that consist of a PCB that sits between the CPU socket and the kabuki CPU.  The kabuki CPU is found in Mitchell and CPS 1.5 arcade boards and contains keys for decrypting/decoding the program roms.
+This is an opensource/hardware implementation of an on the fly kabuki CPU key programmer that consists of a PCB that sits between the CPU socket and the kabuki CPU.  The kabuki CPU is found in Mitchell and CPS 1.5 arcade boards and contains keys for decrypting/decoding the program roms.
 
 ![board pics](images/board.jpg)
 
@@ -33,7 +33,7 @@ Details on *what* to program can be found in MAME's decryption code for the [kab
 openkey-kabuki supports either having a 5 position switch or using solder jumpers for picking which game key to use.   Below is a list of support games and what switches/jumpers must be used for each.
 
 #### Mitchell
-| Switch<br>12345 | Program ROM Labels | MAME Sets | Game Name(s) | Tested / Working |
+| Switch<br>12345 | Program ROM Labels | MAME Sets | Game Names | Tested / Working |
 |-----------------|:------------------:|-----------|--------------|:-----------------:|
 | 00000 | BLE<br>BLJ | block<br>blockj | Block Block | YES (conversion)|
 | 00001 | CBJ | cbasebal | Capcom Baseball | |
@@ -53,7 +53,7 @@ openkey-kabuki supports either having a 5 position switch or using solder jumper
 | 01111 | ??? | ??? | Ashita Tenki ni Naare  (place holder) | |
 
 #### CPS 1.5 (QSound CPU)
-| Switch<br>12345 | Program ROM Labels | MAME Sets | Game Name(s) | Tested / Working |
+| Switch<br>12345 | Program ROM Labels | MAME Sets | Game Names | Tested / Working |
 |-----------------|:------------------:|-----------|--------------|:-----------------:|
 | 10000 | CDE<br>CDJ<br>CDT<br>CDU | dino<br>dinoj<br>dinoa<br>dinou | Cadillacs and Dinosaurs |
 | 10001 | MBE<br>MBJ<br>MBU<br>MBDE<br>MBDJ | slammast<br>mbomberj<br>slammastu<br>mbombrd<br>mbombrdj | Saturday Night Slam Masters<br>Muscle Bomber<br>Muscle Bomber Duo | |
@@ -63,7 +63,7 @@ openkey-kabuki supports either having a 5 position switch or using solder jumper
 ## Hardware
 ---
 #### PCB Manufacturing
-You will want to pick **0.8mm PCB thickness** instead of the default of 1.6mm.  A 1.6mm thick PCB will cause the legs on openkey-kabuki to be a little to short and cause it to not be fully secure in the CPU socket.
+You will want to pick **0.8mm PCB thickness** instead of the default of 1.6mm.  A 1.6mm thick PCB will make the legs on openkey-kabuki to be a little to short and cause it to not be fully secure in the CPU socket.
 
 I've been using [jlcpcb](https://jlcpcb.com/) for PCB manufacturing.  The only real downside I've seen with them is they charge a fee (~$17) if you pick a color other then green or black with 0.8mm PCB thickness.  Also watch out, by default they will add an order number to the silk screen unless you tell them not to.
 
@@ -107,7 +107,7 @@ The openkey-kabuki programming port is setup so you can wedge the pins from the 
 
 ![programming adapter](images/programming_adapter.jpg)
 
-Of course be sure you probably orient the board so the labeled pin/holes match up.  vcc to vcc, gnd to gnd, and updi to updi.
+Of course be sure you properly orient the board so the labeled pin/holes match up.  vcc to vcc, gnd to gnd, and updi to updi.
 
 #### Software
 For software I've been using the [Arduino IDE](https://www.arduino.cc/en/software/OldSoftwareReleases) with [megaTinyCore](https://github.com/SpenceKonde/megaTinyCore), which adds support for tinyAVR 0/1/2-Series MCUs.
@@ -122,7 +122,7 @@ From there you need to configure the board/programming settings.  I've been usin
 
 ## Arcade PCB Prep
 ---
-Its possible the arcade pcb may already have had some type of desuicide mod done to it.   The most common is going to be [The Dead Battery Society](http://www.arcadecollecting.com/dead/) mod, which consists of disabling the decryption on the kabuki CPU and replacing the program rom(s).
+Its possible the arcade PCB may already have had some type of desuicide mod done to it.   The most common is going to be [The Dead Battery Society](http://www.arcadecollecting.com/dead/) mod, which consists of disabling the decryption on the kabuki CPU and replacing the program rom(s).
 
 #### Mitchell
 This is what a dead battery society mod will look like
