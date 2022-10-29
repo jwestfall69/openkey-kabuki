@@ -40,7 +40,7 @@ openkey-kabuki supports either having a 5 position switch or using solder jumper
 | 00010 | CW | cworld | Capcom World | |
 | 00011 | D2 | dokaben2 | Dokaben 2 | YES (conversion) |
 | 00100 | DB | dokaben | Dokaben | YES (conversion) |
-| 00101 | MG2 | mgakuen2 | Mahjong Gakuen 2 Gakuen-chou no Fukushuu | |
+| 00101 | MG2 | mgakuen2 | Mahjong Gakuen 2 Gakuen-chou no Fukushuu | YES |
 | 00110 | MG3 | marukin | Super Marukin-Ban | |
 | 00111 | PK<br>PKO | pkladiesl<br>pkladies | Poker Ladies | |
 | 01000 | PWE<br>PWJ<br>PWU | pang<br>pompingw<br>bbros | Pang<br>Pomping World<br>Buster Bros | YES |
