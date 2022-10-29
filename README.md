@@ -2,7 +2,7 @@
 * [Overview](#overview)
 * [Supported Games](#supported-games)
   * [Mitchell](#mitchell)
-  * [CPS 1.5 (QSound CPU)](#cps-1-5-qsound-cpu)
+  * [CPS 1.5 (QSound CPU)](#cps-15-qsound-cpu)
 * [Hardware](#hardware)
   * [PCB Manufacturing](#pcb-manufacturing)
   * [BOM](#bom)
@@ -12,7 +12,7 @@
   * [Software](#software)
 * [Arcade PCB Prep](#arcade-pcb-prep)
   * [Mitchell](#mitchell-1)
-  * [CPS 1.5 (QSound CPU)](#cps-1-5-qsound-cpu-1)
+  * [CPS 1.5 (QSound CPU)](#cps-15-qsound-cpu-1)
 
 ## Overview
 This is an opensource/hardware implementation of an on the fly kabuki CPU key programmer that consists of a PCB that sits between the CPU socket and the kabuki CPU.  The kabuki CPU is found in Mitchell and CPS 1.5 arcade boards and contains keys for decrypting/decoding the program roms.
