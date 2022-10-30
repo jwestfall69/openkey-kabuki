@@ -78,15 +78,16 @@ I've been using [jlcpcb](https://jlcpcb.com/) for PCB manufacturing.  The only r
 **NOTE**: Additional components maybe needed if you need to revert any previously made desuicide modifications to the arcade PCB.  Check the Arcade PCB Prep section at the bottom for details.
 
 #### Assembly
-You should solder the SMD components first.  Take special care to void getting any solder into any of the socket through holes.
-
-  * If you install the dip switch block I would advise testing it
-  * If you are using the solder jumpers instead, these can be done now or after everything is fully assembled.
+The first thing you should do is a test fit of the socket into the openkey-kabuki PCB.  I came across a couple PCBs in a batch that didn't fit and wasn't until after I had soldered the SMD components that I found this out.
 
 As you can see in the first socket in the picture below the pins start out wide then go skinny.  Normally the wide part is used to keep the socket up off a board, however the openkey-kabuki PCB has extra wide through holes to allow it to sit flush with the plastic part of the socket.  Doing this allows the pins from the socket to be long enough to fit properly into the CPU socket of the arcade board.
 
 ![socket soldering1](images/socket_soldering1.jpg)
 
+You should solder the SMD components first.  Take special care to void getting any solder into any of the socket through holes.
+
+  * If you install the dip switch block I would advise testing it
+  * If you are using the solder jumpers instead, these can be done now or after everything is fully assembled.
 
 When soldering the socket its best to not use a ton of solder.  The below picture is a board where the socket hasn't been soldered in yet.
 
