@@ -1,5 +1,6 @@
 # openkey-kabuki
 * [Overview](#overview)
+* [Project Status](#project-status)
 * [Supported Games](#supported-games)
   * [Mitchell](#mitchell)
   * [CPS 1.5 (QSound CPU)](#cps-15-qsound-cpu)
@@ -28,9 +29,18 @@ Details on *how* to program a kabuki CPU's key data can be found in [Eduardo Cru
 
 Details on *what* to program can be found in MAME's decryption code for the [kabuki CPU](https://github.com/mamedev/mame/blob/master/src/mame/capcom/kabuki.cpp#L73).
 
+## Project Status
+**PCB:** I would consider the design PCB done at this point.  I'm open to any input on changes/improvements as this is my first PCB design.
+
+**Firmware:** Need to get untested games tested
+
+**Documentation:** Done
+
+
 ## Supported Games
----
-openkey-kabuki supports either having a 5 position switch or using solder jumpers for picking which game key to use.   Below is a list of support games and what switches/jumpers must be used for each.
+openkey-kabuki supports either having a 5 position switch or using solder jumpers for picking which game key to use.  For the switch, ensure the switches are fully set.  You should hear a click sound as you change the position.
+
+Below is a list of supported games and what switches/jumpers must be used for each.
 
 #### Mitchell
 | Switch<br>12345 | Program ROM Labels | MAME Sets | Game Names | Tested / Working |
@@ -98,7 +108,6 @@ Note the small gap between the through holes and socket pins.  Solder will natur
 Once you have completed soldering the socket you should check the skinny part of the pins to verify there aren't any solder blobs on them.  These could cause damage to the CPU socket.
 
 ## Programming
----
 #### Hardware
 Programming is done with a UPDI programmer.  I've been using this one:
 
@@ -122,7 +131,6 @@ From there you need to configure the board/programming settings.  I've been usin
 ![arduino ide settings](images/arduino_ide_settings.jpg)
 
 ## Arcade PCB Prep
----
 Its possible the arcade PCB may already have had some type of desuicide mod done to it.   The most common is going to be [The Dead Battery Society](http://www.arcadecollecting.com/dead/) mod, which consists of disabling the decryption on the kabuki CPU and replacing the program rom(s).
 
 #### Mitchell
