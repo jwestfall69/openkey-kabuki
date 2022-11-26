@@ -65,8 +65,8 @@ Below is a list of supported games and what switches/jumpers must be used for ea
 #### CPS 1.5 (QSound CPU)
 | Switch<br>12345 | Program ROM Labels | MAME Sets | Game Names | Tested / Working |
 |-----------------|:------------------:|-----------|--------------|:-----------------:|
-| 10000 | CDE<br>CDJ<br>CDT<br>CDU | dino<br>dinoj<br>dinoa<br>dinou | Cadillacs and Dinosaurs |
-| 10001 | MBE<br>MBJ<br>MBU<br>MBDE<br>MBDJ | slammast<br>mbomberj<br>slammastu<br>mbombrd<br>mbombrdj | Saturday Night Slam Masters<br>Muscle Bomber<br>Muscle Bomber Duo | |
+| 10000 | CDE<br>CDJ<br>CDT<br>CDU | dino<br>dinoj<br>dinoa<br>dinou | Cadillacs and Dinosaurs | |
+| 10001 | MBE<br>MBJ<br>MBU<br>MBDE<br>MBDJ | slammast<br>mbomberj<br>slammastu<br>mbombrd<br>mbombrdj | Saturday Night Slam Masters<br>Muscle Bomber<br>Muscle Bomber Duo | YES |
 | 10010 | PSE<br>PSH<br>PSJ<br>PSE | punisher<br>punisherh<br>punisherj<br>punisheru | Punisher | YES |
 | 10011 | TK2A<br>TK2E<br>TK2J<br>TK2U | wofa<br>wof<br>wofj<br>wofu | Warriors of Fate | |
 
