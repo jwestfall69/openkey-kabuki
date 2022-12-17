@@ -55,8 +55,8 @@ Below is a list of supported games and what switches/jumpers must be used for ea
 | 00111 | PK<br>PKO | pkladiesl<br>pkladies | Poker Ladies | |
 | 01000 | PWE<br>PWJ<br>PWU | pang<br>pompingw<br>bbros | Pang<br>Pomping World<br>Buster Bros | YES |
 | 01001 | Q2 | hatena | Adventure Quiz 2 - Hatena? no Daibouken | |
-| 01010 | Q3 | qtono1 | Quiz Tonosama no Yabou | |
-| 01011 | Q4 | qsangoku | Quiz Sangokushi | |
+| 01010 | Q3 | qtono1 | Quiz Tonosama no Yabou | YES |
+| 01011 | Q4 | qsangoku | Quiz Sangokushi | YES |
 | 01100 | SPE | spang | Super Pang (World) | YES |
 | 01101 | SPJ | spangj | Super Pang (Japan) | YES |
 | 01110 | SPU | sbbros | Super Buster Bros | YES |
