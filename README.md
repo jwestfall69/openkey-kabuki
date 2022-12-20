@@ -51,8 +51,8 @@ Below is a list of supported games and what switches/jumpers must be used for ea
 | 00011 | D2 | dokaben2 | Dokaben 2 | YES (conversion) |
 | 00100 | DB | dokaben | Dokaben | YES (conversion) |
 | 00101 | MG2 | mgakuen2 | Mahjong Gakuen 2 Gakuen-chou no Fukushuu | YES |
-| 00110 | MG3 | marukin | Super Marukin-Ban | |
-| 00111 | PK<br>PKO | pkladiesl<br>pkladies | Poker Ladies | |
+| 00110 | MG3 | marukin | Super Marukin-Ban | YES (conversion) |
+| 00111 | PK<br>PKO | pkladiesl<br>pkladies | Poker Ladies | YES (conversion) |
 | 01000 | PWE<br>PWJ<br>PWU | pang<br>pompingw<br>bbros | Pang<br>Pomping World<br>Buster Bros | YES |
 | 01001 | Q2 | hatena | Adventure Quiz 2 - Hatena? no Daibouken | YES (conversion) |
 | 01010 | Q3 | qtono1 | Quiz Tonosama no Yabou | YES |
