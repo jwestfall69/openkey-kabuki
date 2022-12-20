@@ -47,14 +47,14 @@ Below is a list of supported games and what switches/jumpers must be used for ea
 |-----------------|:------------------:|-----------|--------------|:-----------------:|
 | 00000 | BLE<br>BLJ | block<br>blockj | Block Block | YES (conversion)|
 | 00001 | CBJ | cbasebal | Capcom Baseball | |
-| 00010 | CW | cworld | Capcom World | |
+| 00010 | CW | cworld | Capcom World | YES (conversion) |
 | 00011 | D2 | dokaben2 | Dokaben 2 | YES (conversion) |
 | 00100 | DB | dokaben | Dokaben | YES (conversion) |
 | 00101 | MG2 | mgakuen2 | Mahjong Gakuen 2 Gakuen-chou no Fukushuu | YES |
 | 00110 | MG3 | marukin | Super Marukin-Ban | |
 | 00111 | PK<br>PKO | pkladiesl<br>pkladies | Poker Ladies | |
 | 01000 | PWE<br>PWJ<br>PWU | pang<br>pompingw<br>bbros | Pang<br>Pomping World<br>Buster Bros | YES |
-| 01001 | Q2 | hatena | Adventure Quiz 2 - Hatena? no Daibouken | |
+| 01001 | Q2 | hatena | Adventure Quiz 2 - Hatena? no Daibouken | YES (conversion) |
 | 01010 | Q3 | qtono1 | Quiz Tonosama no Yabou | YES |
 | 01011 | Q4 | qsangoku | Quiz Sangokushi | YES |
 | 01100 | SPE | spang | Super Pang (World) | YES |
