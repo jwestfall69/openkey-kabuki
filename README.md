@@ -134,7 +134,7 @@ From there you need to configure the board/programming settings.  I've been usin
 ![arduino ide settings](images/arduino_ide_settings.jpg)
 
 ## Installation
-**CRITICAL**: Prior to installing openkey-kabuki you need to verify you don't have the [The Dead Battery Society](http://www.arcadecollecting.com/dead/) mod installed on your mitchell or cps 1.5 D board.  Part of the DBS mod is to tie pin 28 of the kabuki CPU to GND.  This pin is normally fed voltage from the battery to supply the CPU with power for its internal ram holding the key data.  openkey-kabuki is setup to supply this pin with power.  Thus if both the DBS mod and openkey-kabuki are install it will result in a short.  This will either cause damage to the openkey-kabuki or your arcade board.
+Prior to installing openkey-kabuki you should verify you don't have the [The Dead Battery Society](http://www.arcadecollecting.com/dead/) mod installed on your mitchell or cps 1.5 D board.  Part of the DBS mod is to tie pin 28 of the kabuki CPU to GND.  This pin is normally fed voltage from the battery/vcc to supply the CPU with power for its internal ram holding the key data.  openkey-kabuki will not function unless this is reverted.
 
 Below is how you can identify if the DBS mod is been installed and how to remove it.
 
