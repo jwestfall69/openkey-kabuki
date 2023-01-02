@@ -11,9 +11,10 @@
 * [Programming](#programming)
   * [Hardware](#hardware-1)
   * [Software](#software)
-* [Arcade PCB Prep](#arcade-pcb-prep)
-  * [Mitchell](#mitchell-1)
-  * [CPS 1.5 (QSound CPU)](#cps-15-qsound-cpu-1)
+* [Installation](#installation)
+  * [Mitchell DBS Identify/Removal](#mitchell-dbs-identifyremoval)
+  * [CPS 1.5 (QSound CPU) DBS Identify/Removal](#cps-15-qsound-cpu-dbs-identifyremoval)
+
 
 ## Overview
 This is an opensource/hardware implementation of an on the fly kabuki CPU key programmer that consists of a PCB that sits between the CPU socket and the kabuki CPU.  The kabuki CPU is found in Mitchell and CPS 1.5 arcade boards and contains keys for decrypting/decoding the program roms.
@@ -85,7 +86,7 @@ I've been using [jlcpcb](https://jlcpcb.com/) for PCB manufacturing.  The only r
 | 100nf / 0.1uf SMD Ceramic Capacitor 0805 Size | | | | |
 | 5 Position Slide Switch | Würth Elektronik 416131160805 | [732-3855-2-ND](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/416131160805/3174531) | [710-416131160805](https://www.mouser.com/ProductDetail/Wurth-Elektronik/416131160805?qs=2kOmHSv6VfT1rqUsojuQog%3D%3D) | **Optional** not needed if using the solder jumpers to pick the game.  This part more then doubles the BOM cost. |
 
-**NOTE**: Additional components maybe needed if you need to revert any previously made desuicide modifications to the arcade PCB.  Check the Arcade PCB Prep section at the bottom for details.
+**NOTE**: Additional components maybe needed if you need to revert any previously made desuicide modifications to the arcade PCB.  Check the Installation section at the bottom for details.
 
 #### Assembly
 The first thing you should do is a test fit of the socket into the openkey-kabuki PCB.  I came across a couple PCBs in a batch that didn't fit and wasn't until after I had soldered the SMD components that I found this out.
@@ -132,10 +133,12 @@ From there you need to configure the board/programming settings.  I've been usin
 
 ![arduino ide settings](images/arduino_ide_settings.jpg)
 
-## Arcade PCB Prep
-Its possible the arcade PCB may already have had some type of desuicide mod done to it.   The most common is going to be [The Dead Battery Society](http://www.arcadecollecting.com/dead/) mod, which consists of disabling the decryption on the kabuki CPU and replacing the program rom(s).
+## Installation
+**CRITICAL**: Prior to installing openkey-kabuki you need to verify you don't have the [The Dead Battery Society](http://www.arcadecollecting.com/dead/) mod installed on your mitchell or cps 1.5 D board.  Part of the DBS mod is to tie pin 28 of the kabuki CPU to GND.  This pin is normally fed voltage from the battery to supply the CPU with power for its internal ram holding the key data.  openkey-kabuki is setup to supply this pin with power.  Thus if both the DBS mod and openkey-kabuki are install it will result in a short.  This will either cause damage to the openkey-kabuki or your arcade board.
 
-#### Mitchell
+Below is how you can identify if the DBS mod is been installed and how to remove it.
+
+#### Mitchell DBS Identify/Removal
 This is what a dead battery society mod will look like
 ![mitchell dbs](images/mitchell_dbs_mod.jpg)
  * R33 (1k ohm resistor) is missing
@@ -148,7 +151,7 @@ This is what a dead battery society mod will look like
  ![mitchell unmodified](images/mitchell_unmodified.jpg)
 
 
-#### CPS 1.5 (QSound CPU)
+#### CPS 1.5 (QSound CPU) DBS Identify/Removal
 
 This is what the dead battery society mod will look like on the QSound board of a cps 1.5 game.
 
