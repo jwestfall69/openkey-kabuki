@@ -69,7 +69,20 @@ Below is a list of supported games and what switches/jumpers must be used for ea
 | 10000 | CDE<br>CDJ<br>CDT<br>CDU | dino<br>dinoj<br>dinoa<br>dinou | Cadillacs and Dinosaurs | |
 | 10001 | MBE<br>MBJ<br>MBU<br>MBDE<br>MBDJ | slammast<br>mbomberj<br>slammastu<br>mbombrd<br>mbombrdj | Saturday Night Slam Masters<br>Muscle Bomber<br>Muscle Bomber Duo | YES |
 | 10010 | PSE<br>PSH<br>PSJ<br>PSE | punisher<br>punisherh<br>punisherj<br>punisheru | Punisher | YES |
-| 10011 | TK2A<br>TK2E<br>TK2J<br>TK2U | wofa<br>wof<br>wofj<br>wofu | Warriors of Fate | |
+| 10011 | TK2A<br>TK2E<br>TK2J<br>TK2U | wofa<br>wof<br>wofj<br>wofu | Warriors of Fate | YES |
+
+**IMPORTANT**: There is a compatibility issue with the older 92636D-3 revision of the D board.  Specifics on this issue can be found [here](https://www.arcade-projects.com/threads/openkey-kabuki-project.23571/post-370690)
+
+When openkey-kabuki is used on a 92636D-3 board revision you will get:
+
+  * "RAM ERROR" screen on Warriors of Fate
+  * "1111 EXCEPTION" screen on Slam Masters
+  * "NG" screen on Muscle Bomber Duo
+  * A black screen on Punisher and C&D
+
+Thus far I've only seen WOF using this older version of the D board.
+
+The compatibility issue was tracked down to a bug in the D9K1 PAL thats on 92636D-3.  The fix is to upgrade that PAL to D9K2, which is found on the newer revision of the D board (92636D-5).
 
 ## Hardware
 ---
@@ -158,7 +171,7 @@ This is what the dead battery society mod will look like on the QSound board of 
 Top Side:<br>
 ![qsound top dbs](images/qsound_top_dbs.jpg)
 * R33 (1 ohm resistor 0805 size) is missing
-* C12 (100nf capactor 0805 size) is replaced with a jumper
+* C12 (100nf capacitor 0805 size) is replaced with a jumper
 * Modified QSound program rom
 
 Bottom Side:<br>
@@ -176,4 +189,4 @@ Top Side:<br>
 Bottom Side:<br>
 ![qsound bottom dbs reverted](images/qsound_bottom_dbs_reverted.jpg)
 
-Its hard to tell from the picture, but pins 30 and 31 on the QSound program rom are jumpered together.
+Its hard to tell from the picture, but pins 30 and 31 on the QSound program rom are jumper'd together.
